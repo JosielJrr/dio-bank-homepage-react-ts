@@ -5,7 +5,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { AppContext } from "../components/AppContext";
 import { api } from "../api";
 
-
 interface UserData {
     email: string
     password: string
@@ -14,9 +13,8 @@ interface UserData {
     id: string
 }
 
-
 export const Conta = () => {
-    const [userData, setUserData] = useState<null | UserData>(); 
+    const [userData, setUserData] = useState<null | UserData>();
 
     const { id } = useParams()
     const navigate = useNavigate()
