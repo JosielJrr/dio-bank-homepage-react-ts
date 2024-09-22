@@ -6,8 +6,9 @@ const conta = {
     id: "1"
 }
 
+// Simula uma API que retorna os dados da conta após 3 segundos
 export const api = new Promise((resolve) => {
     setTimeout(() => {
-        resolve(conta)
-    }, 3000);
-})
+        resolve(conta);  // Resolve a promessa com os dados da conta
+    }, 3000);  // Delay de 3 segundos para simular a requisição
+});
